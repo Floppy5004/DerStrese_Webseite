@@ -9,21 +9,33 @@ Eine moderne, interaktive Website für den coolsten Pinguin im Web - gebaut mit 
 <details>
 <summary>Mehr Screenshots anzeigen</summary>
 
-### Desktop-Ansicht
+### Hero & About
 
-| Hero & About | Streamplan | Social & Support |
-|-------------|------------|------------------|
-| ![Hero](screenshots/hero.png) | ![Streamplan](screenshots/streamplan.png) | ![Support](screenshots/support.png) |
+| Hero-Sektion | About-Sektion |
+|--------------|---------------|
+| ![Hero](screenshots/hero.png) | ![About](screenshots/hero1.png) |
+
+### Streamplan & Social
+
+| Streamplan | Social Media |
+|------------|--------------|
+| ![Streamplan](screenshots/hero2.png) | ![Social](screenshots/hero3.png) |
 
 ### Features
 
-| Twitch Live-Embed | Community | 404 Page |
-|-------------------|-----------|----------|
-| ![Twitch](screenshots/twitch-embed.png) | ![Community](screenshots/community.png) | ![404](screenshots/404-page.png) |
+| Twitch Live-Embed | Emotionen-Grid | Character-Showcase |
+|-------------------|----------------|-------------------|
+| ![Twitch](screenshots/hero4.png) | ![Emotionen](screenshots/hero5.png) | ![Characters](screenshots/hero6.png) |
 
-### Mobile-Ansicht
+### Community & Support
 
-![Mobile View](screenshots/mobile-view.png)
+| Community | Fun Facts | Support |
+|-----------|-----------|---------|
+| ![Community](screenshots/hero7.png) | ![Fun Facts](screenshots/hero8.png) | ![Support](screenshots/hero9.png) |
+
+### Footer
+
+![Footer](screenshots/hero10.png)
 
 </details>
 
