@@ -1,0 +1,21 @@
+{
+  "name": "Der Strese",
+  "short_name": "Strese",
+  "description": "Der coolste Pinguin im Web - Variety Streamer, Retro-Gamer & Karaoke-Feldherr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1A1A2E",
+  "theme_color": "#1A1A2E",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/DerStreseAvatar.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["entertainment", "games", "social"],
+  "lang": "de-DE",
+  "dir": "ltr"
+}

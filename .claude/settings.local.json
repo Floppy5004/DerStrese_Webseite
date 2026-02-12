@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create astro:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(mklink:*)",
+      "WebFetch(domain:derstre.se)",
+      "WebFetch(domain:www.twitch.tv)",
+      "Bash(curl:*)",
+      "Bash(git init:*)",
+      "Bash(gh repo create:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

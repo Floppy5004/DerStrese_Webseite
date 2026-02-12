@@ -1,0 +1,136 @@
+---
+import Header from '../components/Header.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Der Strese - Dein coolster Pinguin im Web" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/DerStreseAvatar.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/DerStreseAvatar.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/DerStreseAvatar.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Der Strese, Twitch Streamer, Variety Streamer, Retro Gaming, Just Chatting, Karaoke, Chaos-Crew, Gaming, Pinguin" />
+    <meta name="author" content="Der Strese" />
+    <link rel="canonical" href="https://derstre.se/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://derstre.se/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://derstre.se/assets/DerStreseAvatar.png" />
+    <meta property="og:site_name" content="Der Strese" />
+    <meta property="og:locale" content="de_DE" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://derstre.se/" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://derstre.se/assets/DerStreseAvatar.png" />
+    <meta name="twitter:creator" content="@derstrese" />
+
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#1A1A2E" />
+    <meta name="msapplication-TileColor" content="#1A1A2E" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Der Strese",
+        "url": "https://derstre.se",
+        "image": "https://derstre.se/assets/DerStreseAvatar.png",
+        "sameAs": [
+          "https://twitch.tv/derstrese",
+          "https://youtube.com/@DerStrese",
+          "https://discord.gg/derstrese",
+          "https://instagram.com/derstrese",
+          "https://ko-fi.com/derstrese"
+        ],
+        "jobTitle": "Variety Streamer",
+        "description": "Chaotisch-liebenswerter Variety-Streamer, Retro-Game-Nerd und Karaoke-Feldherr auf Twitch",
+        "brand": {
+          "@type": "Brand",
+          "name": "Der Strese"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-gradient-to-br from-gray-900 via-penguin-black to-gray-800 overflow-x-hidden">
+    <Header />
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  /* Focus Styles for Accessibility */
+  *:focus-visible {
+    outline: 3px solid #FF8C42;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid #FFD93D;
+    outline-offset: 3px;
+  }
+
+  body {
+    min-height: 100vh;
+    position: relative;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1A1A2E;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #FF8C42, #FFD93D);
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #FFD93D, #FFA5C9);
+  }
+</style>
