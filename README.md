@@ -2,6 +2,31 @@
 
 Eine moderne, interaktive Website für den coolsten Pinguin im Web - gebaut mit Astro und Tailwind CSS.
 
+![Der Strese Website](screenshots/hero.png)
+
+## 📸 Screenshots
+
+<details>
+<summary>Mehr Screenshots anzeigen</summary>
+
+### Desktop-Ansicht
+
+| Hero & About | Streamplan | Social & Support |
+|-------------|------------|------------------|
+| ![Hero](screenshots/hero.png) | ![Streamplan](screenshots/streamplan.png) | ![Support](screenshots/support.png) |
+
+### Features
+
+| Twitch Live-Embed | Community | 404 Page |
+|-------------------|-----------|----------|
+| ![Twitch](screenshots/twitch-embed.png) | ![Community](screenshots/community.png) | ![404](screenshots/404-page.png) |
+
+### Mobile-Ansicht
+
+![Mobile View](screenshots/mobile-view.png)
+
+</details>
+
 ## ✨ Features
 
 - **Dunkles Design**: Atmosphärisches Dark-Mode-Design mit leuchtenden Akzenten
@@ -110,12 +135,37 @@ cp streamplan.png public/assets/
 
 3. **Wichtig:** Zeiten in `src/pages/index.astro` manuell anpassen, falls sich der Streamplan geändert hat (Suche nach `<!-- Stream Schedule Section -->`).
 
+## 📸 Screenshots erstellen
+
+Du kannst automatisch Screenshots für die Dokumentation erstellen:
+
+### Automatisch (Empfohlen)
+
+```bash
+# Playwright installieren
+npm install -D @playwright/test
+npx playwright install
+
+# Dev-Server starten (in einem Terminal)
+npm run dev
+
+# Screenshots erstellen (in einem anderen Terminal)
+node take-screenshots.js
+```
+
+### Manuell
+
+1. Dev-Server starten: `npm run dev`
+2. Browser öffnen: `http://localhost:4321`
+3. Screenshots machen und in `screenshots/` Ordner speichern
+4. Empfohlene Namen: `hero.png`, `streamplan.png`, `support.png`, etc.
+
 ## 🎯 Nächste Schritte
 
+- [ ] Screenshots erstellen und hochladen
 - [ ] Weitere Seiten hinzufügen (Galerie, Kontakt)
 - [ ] Lightbox für Bilder-Galerie
 - [ ] Blog-Sektion für Updates
-- [ ] Easter Eggs und versteckte Interaktionen
 - [ ] Automatisches Streamplan-Update via API
 
 ## 🛠️ Technologie-Stack

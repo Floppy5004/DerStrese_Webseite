@@ -10,7 +10,12 @@
       "Bash(curl:*)",
       "Bash(git init:*)",
       "Bash(gh repo create:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nInitial commit: Der Strese Website\n\n✨ Features:\n- Dunkles Design mit leuchtenden Akzenten\n- Sticky Navigation Header mit Smooth Scroll\n- Vollständiger Streamplan \\(Wochenübersicht\\)\n- Twitch Live-Embed\n- Community-Sektion mit Testimonials\n- Ko-fi Support-Integration \\(3 Stellen\\)\n- 404 Error Page\n- Easter Eggs & Interaktivität \\(Konami-Code, Klick-Events\\)\n- SEO optimiert \\(Open Graph, JSON-LD, Sitemap\\)\n- PWA-Ready \\(Manifest, Service Worker\\)\n- Lazy Loading für Images\n- Accessibility-Features\n\n🐧 Built with Astro & Tailwind CSS\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
